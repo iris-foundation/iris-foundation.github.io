@@ -27,6 +27,20 @@
             box-sizing: border-box;
 
         }
+         @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .loader {
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+        
 
         .bg {
             background-image: url('kji.jpg');
@@ -177,6 +191,7 @@ z-index: -1;
 </head>
 
 <body>
+    <div class="loader">
 
     <div class="navbar">
         <a href="#cnt">Contact</a>
@@ -256,6 +271,6 @@ z-index: -1;
         <a href="https://instagram.com/iris_foundation_official?igshid=1luc2lzltxlyr"><i class="fa fa-instagram"></i></a>
 
     </footer>
-
+    </div>
 
 </body></html>
