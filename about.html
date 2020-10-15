@@ -35,47 +35,24 @@
         }
 
         .loader {
+            margin-top: 20%;
             animation: 1s ease-out 0s 1 slideInFromLeft;
         }
 
-        .bg {
-            
-             background-repeat: no-repeat;
-            background-attachment: fixed;
 
-            height: 90vh;
-            background-color: white;
-            width: 100%;
-           position: fixed;
-            margin-top: 0%;
-
-
-        }
-        
-
-
-
-
-
-        .main {
-            height: 50vh;
-            background-color: #333;
-        }
-
-
-
-        .foote {
-            height: 50vh;
-            background: #333;
-        }
         .up{
             
             height: 40vh;
         }
-
-
-
-
+        .mainbg{
+            width: 100%;
+            height: 58vh;
+            margin-top: 10%;
+            margin-bottom: 20%;
+            position: fixed;
+            z-index: -5;
+            image-resolution: snap;
+        }
 
         .navbar {
             overflow: hidden;
@@ -83,6 +60,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 5;
             margin-bottom: inherit;
         }
 
@@ -111,29 +89,15 @@
             left: 0.5%;
 
         }
-        .mb{
-            background: white;
-        }
 
-
-
-        .hold {
-
-            padding: 5px;
-            margin-top: 7%;
-            margin-bottom: 5%;
-        }
-
-
-        .clearfix {
-            overflow: auto;
-        }
 
         .img2 {
+            height:45vh;
+            width:30%;
             float: right;
-            height: 38vh;
-            width: 45%;
+            margin-top:5% ;
             image-resolution: snap;
+
 
         }
 
@@ -147,12 +111,35 @@
         p {
             font-size: 1.2em;
         }
-
+        .main{
+            background: white;
+            margin-top: 25%;
+        }
         @media only screen and (max-width: 600px) {
             h3 {
                 font-size: 2em;
                 font-style: bold;
             }
+            .main{
+            background: white;
+            margin-top: 10%;
+        }
+            .img2{
+                height:40vh;
+                width:50%;
+                float: none;
+                margin: auto;
+                display: block;
+                image-resolution: snap;
+            }
+            .mainbg{
+            width: 100%;
+            height: 30vh;
+            margin-top: 20%;
+            position: fixed;
+            z-index: -5;
+            image-resolution: snap;
+        }
             
         }
 
@@ -164,63 +151,114 @@
 
     <div class="navbar">
         <a href="#cnt">Contact</a>
-        <a href="#news">About</a>
+        <a href="about.html">About</a>
         <a href="index.html">Home</a>
     </div>
-    
+
 <div class="up">
-    <img src="images/ceo.jpg" style="width: 100%; height: 30vh;margin-top: 20%;position: fixed;z-index: -5;image-resolution: snap">
+    <img class="mainbg" src="images/ceo.jpg">
     
     </div>
-<div class="loader">
-<div class="mb">
-    <div class="hold">
-        <div class="clearfix">
-            <img class="img2" style="height:30vh;" src="images/f.jpg" alt="Pineapple" width="170" height="170">
-            <h3 align="center">OUR MOTTO</h3>
-            <p align="center">
-                ENHANCING EDUCATIONAL WELLNESS AND SOCIAL REFORMATION
-            </p>
+    <div class="main">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-s-6 col-md-6">
+            <div style="float: left;margin: 10%;">
+                <h3 align="center">OUR MOTTO</h3>
+                <p align="center">
+                    ENHANCING EDUCATIONAL WELLNESS AND SOCIAL REFORMATION
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="hold">
-        <div class="clearfix">
-            <img class="img2" src="images/u.jpg" alt="Pineapple" width="170" height="200" style="border-radius: 3%">
-            <h3 align="center">WINGS OF IRIS</h3>
-            <p align="center">
-                MOTIVATIONAL WING<br>
-                BLOOD DONORS WING<br>
-                EDUCATIONAL WING<br>
-                ENVIRONMENTAL WING<br>
-                PSYCHOLOGY WING<br>
-                PHYSICAL WING<br>
-                CHARITY WING<br>
-                CREATIVITY WING<br>
-                MEDICAL WING<br>
-                SOCIAL WING<br>
-                MEDIA WING<br>
-                
-
-            </p>
+        <div class="col-lg-6 col-s-6 col-md-6" >
+            <img class="img2"  src="images/f.jpg"  width="170" height="175">
         </div>
-    </div>
-
-    <div class="hold">
-        <h3 align="center">INTRODUCTION</h3>
-        <P ALIGN="center">
-            IRIS FOUNDATION IS A NON GOVERNMENTAL ORGANISATION FORMED BY STUDENTS TO PUT FORWARD CULTURAL,SOCIAL AND EDUCATIONAL WELLNESS ALONG WITH PERSONALITY DEVELOPMENT. WE THE VOLUNTEERS OF IRIS FOUNDATION WORKS FOR THE REFORMATION OF OUR ILLUMINATIVE SOCIETY.WE HIGHLIGHTS THE POOR,BACKWARD COMMUNITY TO SATISFY THEIR NEEDS AND TO GAIN THEIR RIGHTS.
-
-        </P>
-
-        <h3 align="center">AIMS OF IRIS
-        </h3>
-        <p align="center">
-            IRIS FOUNDATION DREAMS THE REFORMATION OF OUR SOCIETY. WE AIMS EDUCATIONAL WELLNESS AND SOCIAL RECONSTRUCTION. WE HIGHLIGHT THE BACKWARD SOCIETY TO MAKE THEM CAPABLE FOR FACING THEIR DAILY NEEDS AND HELPS THEM TO ACHIEVE THEIR GOALS. IRIS FOUNDATION SUPPORT EDUCATION FOR ECONOMICALLY BACKWARD SOCIETY. WE HOPE WE CAN CREATE A BRIGHT SOCIETY.
-
-        </p>
 
     </div>
 
+
+    <div class="row" >
+        <div class="col-lg-6 col-s-6 col-md-6">
+            <div style="float: left;margin: 5%;">
+               <h3 align="center">WINGS OF IRIS</h3>
+                <div class="row">
+                    <div class="col-6" style="float: left;">
+                        <p>
+                            CHARITY WING<br>
+                            MEDICAL WING<br>
+                            SOCIAL WING<br>
+                            EDUCATIONAL WING<br>
+                            PSYCHOLOGY WING<br>
+                            BLOOD DONORS WING<br>
+                        </p>
+                    </div>
+                    <div class="col-6" style="float: right;margin-right: 0;margin-left: 2%">
+                        <p>
+                            PHYSICAL WING<br>
+                            MOTIVATIONAL WING<br>
+                            MEDIA WING<br>
+                            ENVIRONMENTAL WING<br>
+                            CREATIVITY WING<br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-s-6 col-md-6">
+            <img class="img2"  src="images/u.jpg"  width="170" height="175" style="border-radius: 3%;">
+        </div>
+
+    </div>
+</div>
+    <!--<div class="mb">-->
+<!--    <div class="container">-->
+<!--    <div class="hold">-->
+<!--        <div class="clearfix">-->
+<!--            <img class="img2" style="height:30vh;" src="images/f.jpg" alt="Pineapple" width="170" height="170">-->
+<!--            <h3 align="center">OUR MOTTO</h3>-->
+<!--            <p align="center">-->
+<!--                ENHANCING EDUCATIONAL WELLNESS AND SOCIAL REFORMATION-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="hold">-->
+<!--        <div class="clearfix">-->
+<!--            <img class="img2" src="images/u.jpg" alt="Pineapple" width="170" height="200" style="border-radius: 3%">-->
+<!--            <h3 align="center">WINGS OF IRIS</h3>-->
+<!--            <p align="center">-->
+<!--                MOTIVATIONAL WING<br>-->
+<!--                BLOOD DONORS WING<br>-->
+<!--                EDUCATIONAL WING<br>-->
+<!--                ENVIRONMENTAL WING<br>-->
+<!--                PSYCHOLOGY WING<br>-->
+<!--                PHYSICAL WING<br>-->
+<!--                CHARITY WING<br>-->
+<!--                CREATIVITY WING<br>-->
+<!--                MEDICAL WING<br>-->
+<!--                SOCIAL WING<br>-->
+<!--                MEDIA WING<br>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="hold">-->
+<!--        <h3 align="center">INTRODUCTION</h3>-->
+<!--        <P ALIGN="center">-->
+<!--            IRIS FOUNDATION IS A NON GOVERNMENTAL ORGANISATION FORMED BY STUDENTS TO PUT FORWARD CULTURAL,SOCIAL AND EDUCATIONAL WELLNESS ALONG WITH PERSONALITY DEVELOPMENT. WE THE VOLUNTEERS OF IRIS FOUNDATION WORKS FOR THE REFORMATION OF OUR ILLUMINATIVE SOCIETY.WE HIGHLIGHTS THE POOR,BACKWARD COMMUNITY TO SATISFY THEIR NEEDS AND TO GAIN THEIR RIGHTS.-->
+
+<!--        </P>-->
+
+<!--        <h3 align="center">AIMS OF IRIS-->
+<!--        </h3>-->
+<!--        <p align="center">-->
+<!--            IRIS FOUNDATION DREAMS THE REFORMATION OF OUR SOCIETY. WE AIMS EDUCATIONAL WELLNESS AND SOCIAL RECONSTRUCTION. WE HIGHLIGHT THE BACKWARD SOCIETY TO MAKE THEM CAPABLE FOR FACING THEIR DAILY NEEDS AND HELPS THEM TO ACHIEVE THEIR GOALS. IRIS FOUNDATION SUPPORT EDUCATION FOR ECONOMICALLY BACKWARD SOCIETY. WE HOPE WE CAN CREATE A BRIGHT SOCIETY.-->
+
+<!--        </p>-->
+
+<!--    </div>-->
+    </div>
     <div class="intros">
 
 
@@ -240,8 +278,8 @@
         <a href="https://instagram.com/iris_foundation_official?igshid=1luc2lzltxlyr"><i class="fa fa-instagram"></i></a>
 
     </footer>
-    </div>
-    </div>
+
+
 </body>
 
 </html>
